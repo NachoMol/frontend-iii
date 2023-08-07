@@ -8,9 +8,10 @@
 
 
 .products{
-
+    text-align: center;
 }
 
 .container{
-    
+    padding: 20px;
+    margin: 20px;
 }
