@@ -1,3 +1,5 @@
+import styles from './app.module.css'
+
 const productos = [
   {
       "id": 0,
@@ -25,8 +27,6 @@ const productos = [
   }
 ]
 
-//probando a ver si puedo hacer commits sobre este repo!!!
-
 function App() {
   return (
     <>
@@ -34,13 +34,15 @@ function App() {
       <h1>Productos</h1>
       {productos.map((e)=> {
         return(
-          <ul key={e.id}>
-          <li>
+          <div className={styles.container}>
+          <ul key={e.id} className={styles.products}>
+          <li className={styles.product}>
             <h2>{e.nombre}</h2>
             <img src={e.imagen} alt="imagen" />
-            <h3>{e.precio}</h3>
+            <h3 className= {styles.price}>{e.precio}</h3>
           </li>
           </ul>
+          </div>
         )
       })}
     </div>
