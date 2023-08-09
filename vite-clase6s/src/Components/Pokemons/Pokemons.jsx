@@ -22,7 +22,7 @@ const Pokemons = () => {
         }
     }
 
-    console.log(usuario)
+    console.log(usuario) // haciendo un cambio para mostrar un commit
 
 return (
     <form onSubmit={handleSubmit}>
