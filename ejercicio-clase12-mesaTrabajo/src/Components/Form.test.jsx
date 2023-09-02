@@ -1,4 +1,4 @@
-import { value, render, screen } from "@testing-library/react";
+import { value, fireEvent, render, screen } from "@testing-library/react";
 import { describe, test, expect, vi } from "vitest";
 import Form from './Form'
 
@@ -8,7 +8,7 @@ describe("Form testing", () => {
         const input = screen.getByTestId('input')
         expect(isNaN(Number(input,value))).toBe(true);
     })
-    /* test("el boton se debe disparar", () => {
+    test("el boton se debe disparar", () => {
         const handleClick = vi.fn()
         render(<Form handleClick={handleClick}/>)
         const button = screen.getByText("Iniciar test")
