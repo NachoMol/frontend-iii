@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Formulario con testeos</h1>
+        <h1>Clase 12 - Testeos en React</h1>
         <Routes>
         <Route path="/" element={<Home />} />
         </Routes>
